@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Playwrite+NZ:wght@100..400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #232323;}
+
+html,
+body,
+main#an--content,
+div.container{
+    height: 100%;
+    width: 100%;}
+
+body{
+    background-color: #95D2B3;}
+
+div.container{
+    display: flex;
+    align-items: start;
+    justify-content: center;}
+
+div.calculatorBox{
+    text-align: center;
+    width: 30%;
+    height: auto;
+    margin: 20px auto;
+    min-height: 450px;
+    max-height: 450px;}
+
+h2.calc--heading{
+    font-size: 40px;
+    font-family: "Anek Devanagari", sans-serif;
+    color: #0e0e47;
+    margin: 0;}
+
+div.calculator--grabber{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    min-height: 400px;
+    background-color: #232323;}
+
+div.calc--input input.inputValue{
+    width: 100%;
+    padding: 0 5px;
+    outline: 0;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border: 0;
+    text-align: right;
+    font-size: 30px;
+    height: 100px;}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;}
+
+div.calc--buttons{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;}
+
+button.calc_button,
+button{
+    border-radius: 50px;    
+    border: none;
+    width: 23%;
+    cursor: pointer;
+    color: white;
+    transition: all 0.2s ease;
+    background-color: #444444;
+    font-size: 26px;
+    aspect-ratio: 1 / 1;}
+
+button.calc_button i{
+    color: white;
+    font-size: 26px;}
+
+button.buttonAC{
+    background-color: red;}
+
+button.buttoneq{
+    background-color: green;}
+
+button.buttonOpt{
+    background-color: #e85d5dbf;}
+
+button.calc_button:active{
+    transform: scale(1.05);}
+
+
+
+@media(min-width: 600px) and (max-width: 1000px){
+div.calculatorBox{
+    width: 90%;}
+
+h2.calc--heading{
+    font-size: 44px;}
+
+div.calc--input input.inputValue{
+    height: 200px;}
+}
+
+@media(min-width: 600px) and (max-width: 1000px){
+div.calculatorBox{
+    width: 90%;}    
+    
+h2.calc--heading{
+    font-size: 40px;
+}
+}
