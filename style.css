@@ -116,3 +116,14 @@ h2.calc--heading{
     font-size: 40px;
 }
 }
+
+@media(max-width: 600px){
+div.calculatorBox{
+    width: 90%;}    
+    
+h2.calc--heading{
+    font-size: 40px;
+}
+}
+
+
