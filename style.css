@@ -119,7 +119,7 @@ h2.calc--heading{
 
 @media(max-width: 600px){
 div.calculatorBox{
-    width: 90%;}    
+    width: 90% !important;}    
     
 h2.calc--heading{
     font-size: 40px;
